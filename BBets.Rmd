@@ -69,7 +69,8 @@ histogram(BTeach)
 STeach <- sort(BTeach)
 favstats(BTeach)
 ```
-The Confidence level is `r STeach[5]` to `r STeach[195]`
+The Confidence level is `r mean(STeach)` and  `r sd(STeach)`. the 95$ confidence interval is 
+`r mean(STeach)- 2*sd(STeach)` to `r mean(STeach)+ 2*sd(STeach)`
 
 
 # What are the fair odds? Use manipulation of odds in the function to tune Brownlows earnings to zero. 
@@ -110,4 +111,5 @@ To make the bet fair you would need to have 28 people in the class.
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If professor Brownlow is consistantly making or losing money how could he change his payout so that his profits center on zero?  Also discuss what size his class should be in order to have his current scheme balance at zero profit.!-->
+So for Brownlow to get 0 dollars or lose a little money we would need an odd of 4.43 and a class size of only 28 dollars so we would only lose only a little bit of money 
 
